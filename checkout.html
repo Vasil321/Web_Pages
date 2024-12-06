@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Checkout</title>
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="checkout.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <!-- bootstrap links -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        <!-- fonts links -->
+    </head>
+
+
+
+
+    <body>
+        <header>
+            <h1>Checkout</h1>
+        </header>
+  
+
+        <nav class="navbar navbar-expand-lg" id="navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" id="logo"><span id="span1">U</span>nit<span>Y</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              //<span><img src="./images/menu.png" alt="" width="30px"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="https://w2014005.users.ecs.westminster.ac.uk/Unity/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://w1989035.users.ecs.westminster.ac.uk/Unity/shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://w1985568.users.ecs.westminster.ac.uk/Unity/gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://w1985568.users.ecs.westminster.ac.uk/Unity/sitemap.html">Sitemap</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://w2014005.users.ecs.westminster.ac.uk/Unity/feedback.html">Feedback</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Other's pages
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: rgb(67 0 86);">
+                    <li><a class="dropdown-item" href="https://w1989182.users.ecs.westminster.ac.uk/Unity/profile.html">User profile</a></li>
+                    <li><a class="dropdown-item" href="https://w1989182.users.ecs.westminster.ac.uk/Unity/team.html">Team description</a></li>
+                  </ul>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+
+        <main>
+            <!-- Start of form -->
+            <form>
+                <!-- Payment info fieldset -->
+                <fieldset>
+                    <!-- Add legend to fieldset -->
+                    <legend>Payment Info</legend>
+                    <!-- Add label for input -->
+                    <label for="name">Card Holder<span class="required">*</span></label>
+                    <!-- Set input type and add required for validation -->
+                    <input id="name" type="text" required>
+                    <!-- Adds spacing between inputs-->
+                    <br>
+                    <br>
+
+                    <label for="card-num">Card Number<span class="required">*</span></label>
+                    <input id="card-num" type="number" required>
+                    <br>
+                    <br>
+
+                    <label for="date">Exp Date<span class="required">*</span></label>
+                    <input id="date" type="date" required>
+                    <br>
+                    <br>
+
+                    <label for="cvv">CVV<span class="required">*</span></label>
+                    <input id="cvv" type="number" required>
+                    <br>
+                    <br>
+
+                    <!-- Save and reset buttons -->
+                    <button type="submit">Save</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+
+                <!-- Billing Adress fieldset -->
+                <fieldset>
+                    <legend>Billing Address</legend>
+                    <label for="address1">Address 1<span class="required">*</span></label>
+                    <input id="address1" type="text" required>
+                    <br>
+                    <br>
+
+                    <label for="address2">Address 2</label>
+                    <input id="address2" type="text">
+                    <br>
+                    <br>
+
+                    <label for="town">Town/City<span class="required">*</span></label>
+                    <input id="town" type="text" required>
+                    <br>
+                    <br>
+
+                    <label for="code">Post Code<span class="required">*</span></label>
+                    <input id="code" type="text" required>
+                    <br>
+                    <br>
+
+
+                    <button type="submit">Save</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+
+                <!-- Contact Details fieldset -->
+                <fieldset>
+                    <legend>Contact Details</legend>
+                    <label for="Fname">First Name<span class="required">*</span></label>
+                    <input id="Fname" type="text" required>
+                    <br>
+                    <br>
+
+                    <label for="Sname">Surname<span class="required">*</span></label>
+                    <input id="Sname" type="text" required>
+                    <br>
+                    <br>
+
+                    <label for="email">Email Address<span class="required">*</span></label>
+                    <input id="email" type="email" required>
+                    <br>
+                    <br>
+
+                    <label for="phone">Phone number</label>
+                    <input id="phone" type="number">
+                    <br>
+                    <br>
+
+
+                    <button type="submit">Save</button>
+                    <button type="reset">Reset</button>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Order</legend>
+                    <div>
+                        <h1>Order Total: £<span id="totalPrice"></span> </h1>
+                    </div>
+                    <button type="button" onclick="validate()">Make Payment</button>
+                    <button type="button" onclick="cancel()"> Cancel Order </button>
+
+
+                </fieldset>
+
+
+
+
+            </form>
+        </main>
+
+        <footer id="footer">
+          <div class="footer-top">
+            <div class="container">
+              <div class="row">
+    
+                
+                <div class="col-lg-3 col-md-6 footer-links">
+                  <h4>Usefull Links</h4>
+                 <ul>
+                  <li><a href="https://w2014005.users.ecs.westminster.ac.uk/Unity/home.html">Home</a></li>
+                  <li><a href="https://w1989182.users.ecs.westminster.ac.uk/Unity/team.html">About team</a></li>
+                  <li><a href="https://w1989035.users.ecs.westminster.ac.uk/Unity/content_ST1.html">Content page 1 </a></li>
+                  <li><a href="https://w2014005.users.ecs.westminster.ac.uk/Unity/content_ST2.html">Content page 2 </a></li>
+                  <li><a href="https://w1989182.users.ecs.westminster.ac.uk/Unity/content_ST3.html">Content page 3 </a></li>
+                  <li><a href="https://w1985568.users.ecs.westminster.ac.uk/Unity/content_ST4.html">Content page 4 </a></li>
+                 </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+            <div class="credits">
+              <a href="https://w1989035.users.ecs.westminster.ac.uk/Unity/pageEditor_ST1.html">PAGE EDITOR</a>
+            </div>
+        
+        </footer>
+        
+        <script src="checkout.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+
+</html>
